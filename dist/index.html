@@ -1368,10 +1368,14 @@ function gmHTML(s) {
   </section>`;
 }
 function linksHTML() {
+  /* Relative on purpose. On GitHub Pages this page is /pf2eprimer/, so "../pf2epartytracker/"
+     lands on the sibling; self-hosted in the PF2e Toolbox the same path is redirected to
+     /tracker/. Absolute GitHub URLs would send someone reading this offline, on a boat,
+     out to the internet for a tool sitting on the same server. */
   const tools = [
-    { name: "PF2e Party Tracker", url: "https://thewhytewolf.github.io/pf2epartytracker/",
+    { name: "PF2e Party Tracker", url: "../pf2epartytracker/",
       note: "GM-side: everyone's passive DCs on one screen, secret checks rolled for the whole party at once, and the exploration activity board from this tab." },
-    { name: "PF2e Spellbook", url: "https://thewhytewolf.github.io/pf2espellcards/",
+    { name: "PF2e Spellbook", url: "../pf2espellcards/",
       note: "Player-side: prepare the day's spells, track castings and focus points, and see what a spell actually does at the rank you're casting it." },
   ];
   return `<section class="sec">
