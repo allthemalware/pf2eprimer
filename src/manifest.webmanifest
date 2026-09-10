@@ -1,0 +1,13 @@
+{
+  "name": "PF2e Primer",
+  "short_name": "PF2e Primer",
+  "description": "A hands-on introduction to Pathfinder 2e: the three pillars of play, with live demos of every core rule.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#14161b",
+  "theme_color": "#14161b",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

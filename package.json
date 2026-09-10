@@ -1,0 +1,47 @@
+{
+  "name": "pf2e-primer",
+  "version": "0.1.0",
+  "description": "A hands-on introduction to Pathfinder 2e for players who already know tabletop RPGs — the three pillars of play, with live demos (single self-contained HTML).",
+  "keywords": [
+    "pathfinder",
+    "pf2e",
+    "beginner",
+    "primer",
+    "teaching",
+    "ttrpg"
+  ],
+  "homepage": "https://thewhytewolf.github.io/pf2eprimer/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWhyteWolf/pf2eprimer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheWhyteWolf/pf2eprimer/issues"
+  },
+  "author": "Whyte",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "bin": {
+    "pf2e-primer": "bin/cli.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "tools/",
+    "data/",
+    "dist/",
+    "notice.md"
+  ],
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "build:ref": "python3 tools/build_reference.py --src \"$PF2E_DATA/packs/pf2e\" --out data/reference.generated.js",
+    "test": "node tools/test.mjs",
+    "check": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
