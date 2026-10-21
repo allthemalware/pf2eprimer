@@ -10,13 +10,13 @@
     "teaching",
     "ttrpg"
   ],
-  "homepage": "https://thewhytewolf.github.io/pf2eprimer/",
+  "homepage": "https://allthemalware.github.io/pf2eprimer/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheWhyteWolf/pf2eprimer.git"
+    "url": "git+https://github.com/allthemalware/pf2eprimer.git"
   },
   "bugs": {
-    "url": "https://github.com/TheWhyteWolf/pf2eprimer/issues"
+    "url": "https://github.com/allthemalware/pf2eprimer/issues"
   },
   "author": "Whyte",
   "license": "SEE LICENSE IN LICENSE",
